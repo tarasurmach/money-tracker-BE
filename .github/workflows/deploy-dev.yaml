@@ -18,9 +18,9 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: ${{vars.HEROKU_APP_NAME}}
           heroku_email: ${{vars.HEROKU_EMAIL}}
-          env:
-            DATABASE_HOST: ${{secrets.DATABASE_HOST}}
-            DATABASE_NAME: ${{secrets.DATABASE_NAME}}
-            DATABASE_PASSWORD: ${{secrets.DATABASE_PASSWORD}}
-            DATABASE_USERNAME: ${{secrets.DATABASE_USERNAME}}
+        env:
+          DATABASE_HOST: ${{secrets.DATABASE_HOST}}
+          DATABASE_NAME: ${{secrets.DATABASE_NAME}}
+          DATABASE_PASSWORD: ${{secrets.DATABASE_PASSWORD}}
+          DATABASE_USERNAME: ${{secrets.DATABASE_USERNAME}}
           # usedocker: true
