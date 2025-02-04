@@ -5,7 +5,10 @@ import { dbConfig } from './config/ormconfig';
 @Module({
   imports: [
     TypeOrmModule.forRootAsync({
-      useFactory: () => dbConfig,
+      useFactory: () => {
+        console.log(dbConfig);
+        return dbConfig;
+      },
     }),
   ],
   controllers: [],
