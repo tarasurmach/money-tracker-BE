@@ -1,4 +1,5 @@
 import { DataSourceOptions } from 'typeorm';
+import * as process from 'node:process';
 
 const entities = [];
 
@@ -12,4 +13,5 @@ export const dbConfig: DataSourceOptions = {
   migrationsRun: false,
   synchronize: false,
   logging: false,
+  ssl: process.env.ENV === 'prod' ? { rejectUnauthorized: false } : false,
 };
