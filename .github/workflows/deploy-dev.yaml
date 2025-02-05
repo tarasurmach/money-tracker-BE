@@ -24,6 +24,6 @@ jobs:
             DATABASE_USERNAME=${{ secrets.DATABASE_USERNAME }} \
             DATABASE_PASSWORD=${{ secrets.DATABASE_PASSWORD }} \
             DATABASE_NAME=${{ secrets.DATABASE_NAME }} \
-            ENV=prod
+            ENV=prod \
             --app ${{ vars.HEROKU_APP_NAME }}
           # usedocker: true
